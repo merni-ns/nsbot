@@ -32,6 +32,7 @@ async def cmd_pollusers(ctx, title):
     msg = ""
     numused = 0
     # this creates options in the form "<emoji> <nickname> (<username#nnnn>)"
+    # for eg. [1] CANADA (Merni#1234) if my nickname was CANADA and [1] is the 1 "keycap emoji"
     for i in range(len(alive)):
         msg += f"{EMOJI[i]} {alive[i].display_name} ({alive[i].name}#{alive[i].discriminator})\n"
         numused += 1
